@@ -1,29 +1,44 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
-/* Defina o tamanho da fonte padrão e as cores */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+:root {
+    --color-bg: #202735;
+    --color-primary: #d6293d;
+    --color-secondary: #00b6d8;
+    --color-tertiary: #ffffff;
+    --color-text: #ffffff;
+    --color-heading: #ffffff;
+    --color-border: #d4d4d4;
+}
+
 body {
     font-size: 16px;
-    color: #333;
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-bg);
 }
 
-/* Alinhe o cabeçalho à esquerda e defina a cor do fundo */
+/* cabeçalho  */
 header {
-    background-color: #333;
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--color-primary);
     color: #fff;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
+    box-shadow: 0px 1px 2px #ddd;
+    margin-bottom: 3%;
 }
 
-/* Alinhe a navegação à direita */
+/* navegação */
 nav {
-    margin-left: auto;
+    display: flex;
+    justify-content: end;
 }
 
 nav ul {
@@ -40,7 +55,7 @@ nav a {
     text-decoration: none;
 }
 
-/* Adicione um espaçamento na parte superior do main */
+/* espaçamento na parte superior do main */
 main {
     margin-top: 2rem;
     display: flex;
@@ -48,7 +63,7 @@ main {
     align-items: center;
 }
 
-/* Estilize a caixa de pesquisa */
+/* caixa de pesquisa */
 .search {
     display: flex;
     margin-bottom: 1rem;
@@ -57,34 +72,40 @@ main {
 .search input[type="text"] {
     flex: 1;
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: none;
+    border-bottom: 2px solid var(--color-secondary);
+    background-color: transparent;
+    color: var(--color-heading);
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .search button {
     padding: 0.5rem 1rem;
     border: none;
-    background-color: #333;
+    background-color: var(--color-secondary);
     color: #fff;
     border-radius: 4px;
     margin-left: 0.5rem;
     cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-/* Estilize o contêiner do Pokémon */
+/* contêiner do Pokémon */
 .pokemon {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border);
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilize a imagem do Pokémon */
+/* imagem do Pokémon */
 .pokemon img {
     width: 200px;
     height: 200px;
@@ -92,60 +113,33 @@ main {
     margin-bottom: 1rem;
 }
 
-/* Estilize as informações do Pokémon */
+/* informações do Pokémon */
 .pokemon h2 {
     margin-bottom: 0.5rem;
+    color: var(--color-heading);
 }
 
 .pokemon p {
     margin: 0.25rem 0;
+    color: var(--color-text);
 }
 
 .pokemon p strong {
     font-weight: bold;
 }
 
-.pokemon p span {
-    font-weight: normal;
+.pokemon span {
+    color: var(--color-secondary);
+    font-weight: bold;
 }
 
-/* Estilize o contêiner das evoluções */
-.evolutions {
-    margin-bottom: 2rem;
-}
-
-.evolutions h3 {
-    margin-bottom: 1rem;
-}
-
-.evolutions ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    max-width: 600px;
-}
-
-.evolutions li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.evolutions li img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    margin-bottom: 0.5rem;
-}
-
-.evolutions li p {
-    margin: 0;
-}
-
-/* Defina o rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #ccc;
     padding: 1rem;
+    font-size: small;
     text-align: center;
 }
