@@ -1,52 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <title>Pokéhub</title>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<!-- links -->
   <link rel="stylesheet" href="CSS/code.css">
-
-<!-- .... -->
+  <title>Pokéhub</title>
 </head>
 <body>
-  <header>
-    <h1>Pokéhub</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Página Inicial</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="search">
-      <input type="text" placeholder="Digite o nome ou o número de identificação do Pokémon">
-      <button>Buscar</button>
-    </div>
-    <div class="pokemon">
-        <img src="#" alt="pokemon" class="pokemon_image">
-        <img src="pokedex.png" alt="pokedex" class="pokemon_image">
-      <h2></h2>
-      <p><strong>Número de identificação:</strong> <span></span></p>
-      <p><strong>Altura:</strong> <span></span></p>
-      <p><strong>Peso:</strong> <span></span></p>
-    </div>
-    <div class="evolutions">
-      <h3>Evoluções</h3>
-      <ul>
-        <li><img src="" alt=""><p></p></li>
-        <li><img src="" alt=""><p></p></li>
-        <li><img src="" alt=""><p></p></li>
-      </ul>
-    </div>
-  </main>
-  <footer>
-    <p>Desenvolvido por &copy;Adryel_santos</p>
-  </footer>
+  <div class="container">
+    <h1 class="pokemon_name">Pokemon</h1>
+    <img src="#" class="pokemon_image" alt="pokemon" width="100px"><br><br>
+    <form>
+      <input type="text" class="input-pesquisa">
+    </form>
+  </div>
   <script src="JS/code.js"></script>
-
 </body>
 </html>

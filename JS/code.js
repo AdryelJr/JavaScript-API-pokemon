@@ -1,4 +1,5 @@
 const pokemonImage = document.querySelector('.pokemon_image');
+const input = document.querySelector('.input_search');
 
 const fetchPokemon = async (pokemon) => {
     const APIResnponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -17,3 +18,5 @@ const rennderPokemon = async (pokemon) => {
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
     }
 }
+
+rennderPokemon('500');
