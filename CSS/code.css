@@ -80,6 +80,14 @@ main {
     font-weight: bold;
 }
 
+.pokemon_image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+}
+
 .search button {
     padding: 0.5rem 1rem;
     border: none;
