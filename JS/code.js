@@ -1,5 +1,10 @@
 const pokemonImage = document.querySelector('.pokemon_image');
-const input = document.querySelector('.input_search');
+const pesquisa = document.querySelector('.input-pesquisa');
+const form = document.querySelector('.form');
+
+let pesquisaPokemon = pesquisa.value;
+
+
 
 const fetchPokemon = async (pokemon) => {
     const APIResnponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
@@ -10,13 +15,20 @@ const fetchPokemon = async (pokemon) => {
     }
 }
 
-const rennderPokemon = async (pokemon) => { 
+const renderPokemon = async (pokemon) => { 
 
     const data = await fetchPokemon(pokemon);
     
     if(data){
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        pesquisa.value = '';
+        pesquisaPokemon = data.id;
     }
 }
 
-rennderPokemon('500');
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    renderPokemon(pesquisa.value.toLowerCase());
+});
+
+renderPokemon(pesquisaPokemon);
