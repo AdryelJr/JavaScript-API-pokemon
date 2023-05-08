@@ -2,8 +2,8 @@ const pokemonImage = document.querySelector('.pokemon_image');
 const pesquisa = document.querySelector('.input-pesquisa');
 const form = document.querySelector('.form');
 
-let pesquisaPokemon = pesquisa.value;
 
+let pesquisaPokemon = 1;
 
 
 const fetchPokemon = async (pokemon) => {
@@ -30,5 +30,7 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     renderPokemon(pesquisa.value.toLowerCase());
 });
+
+
 
 renderPokemon(pesquisaPokemon);
