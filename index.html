@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/code.css">
-  <title>Pokéhub</title>
-</head>
-<body>
-  <div class="container">
-    <h1 class="pokemon_name"><strong>POKEMON</strong></h1>
-    <p>nome</p>
-    <img src="#" class="pokemon_image" alt="pokemon" width="100px"><br><br>
-    <form class="form">
-      <input type="text" class="input-pesquisa">
-    </form>
-  </div>
 
-  <script src="JS/code.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="code.css">
+    <title>Pokéhub</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>POKEMON</h3>
+        <p>Nome: <span class="nomePokemon"></span> <br>
+            ID: <span class="idPokemon"></span></p>
+        <img src="#" class="pokemon_image" alt="pokemon" width="90px">
+        <p>TipoPokemon: <span class="tipoPokemon"></span></p>
+        <form class="form">
+            <input type="text" class="input-pesquisa" placeholder="Pesquisar pokemon">
+        </form>
+    </div>
+
+    <div class="container2">
+        <div class="evolucao">
+            <h2>Evoluções</h2>
+            <p>Nome: <span class="evolucaoPokemon1"></span> <br>
+                ID: <span class="evolucaoid1"></span></p>
+            <img src="#" class="pokemon_image" alt="pokemon" width="100px">
+            <p>TipoPokemon: <span class="tipoPokemon"></span></p>
+        </div>
+        <div class="evolucao">
+            <h2>Evoluções</h2>
+            <p>Nome: <span class="evolucaoPokemon2"></span> <br>
+                ID: <span class="evolucaoid2"></span></p>
+            <img src="#" class="pokemon_image" alt="pokemon" width="100px">
+            <p>TipoPokemon: <span class="tipoPokemon"></span></p>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
 </body>
+
 </html>
