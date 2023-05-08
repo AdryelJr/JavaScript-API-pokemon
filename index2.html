@@ -122,7 +122,7 @@
         </h1>
 
         <form class="form">
-            <input type="search" class="input_search" placeholder="Name or Number" required />
+            <input type="search" class="input_search" placeholder="Nome ou Numero" required />
         </form>
 
         <div class="buttons">
@@ -171,6 +171,7 @@
                 pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
                 input.value = '';
                 searchPokemon = data.id;
+                console.log(pokemonName);
             } else {
                 pokemonImage.style.display = 'none';
                 pokemonName.innerHTML = 'Not found :c';
