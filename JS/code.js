@@ -37,7 +37,7 @@ renderPokemon(pesquisaPokemon);
 
 
 
-======================================================================
+// ======================================================================
 
 const nomePokemon = document.querySelector('.nomePokemon');
 const idPokemon = document.querySelector('.idPokemon');
