@@ -2,7 +2,6 @@
 // const pesquisa = document.querySelector('.input-pesquisa');
 // const form = document.querySelector('.form');
 
-
 // let pesquisaPokemon = 1;
 
 
@@ -30,8 +29,6 @@
 //     event.preventDefault();
 //     renderPokemon(pesquisa.value.toLowerCase());
 // });
-
-
 
 // renderPokemon(pesquisaPokemon);
 
